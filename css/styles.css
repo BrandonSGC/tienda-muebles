@@ -3,6 +3,7 @@
     --celeste: #037bc0;
     --negro: #000000;
     --grisClaro: #e1e1e1;
+    --blanco: #FFFFFF;
 }
 
 /* Border Box estandar*/
@@ -12,16 +13,29 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
+body {
+    font-family: 'Raleway', sans-serif;
+}
 /* Globales */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
 a {
     text-decoration: none;
     color: var(--negro);
 }
-
+img {
+    max-width: 100%;
+    display: block;
+}
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Propiedades */
+.text-center {
+    text-align: center;
 }
 
 /* Header y Navegacion*/
@@ -48,3 +62,26 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Categorias */
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    transition: .3s;
+    border-bottom-right-radius: 8px;
+}
+
