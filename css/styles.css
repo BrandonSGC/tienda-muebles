@@ -9,17 +9,32 @@
 /* Border Box estandar*/
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7;
 }
 /* Globales */
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
 a {
     text-decoration: none;
     color: var(--negro);
@@ -29,7 +44,7 @@ img {
     display: block;
 }
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -41,6 +56,7 @@ img {
 /* Header y Navegacion*/
 .nombre-sitio {
     text-align: center;
+    margin: 3rem 0;
 }
 .nombre-sitio span {
     color: var(--celeste);
@@ -51,37 +67,58 @@ img {
 }
 
 .nav-principal {    
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .hero {
-    height: 550px;
+    height: 50.5rem;
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 /* Categorias */
-
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
 
 .categoria a {
     display: block;
     text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+    padding: 2rem 0;
+    font-size: 2rem;
 }
 
 .categoria a:hover {
     background-color: var(--celeste);
     color: var(--blanco);
     transition: .3s;
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: .8rem;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, var(--celeste) 50%, var(--celeste) 
+    100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros {    
+    flex-basis: 50%;
+    padding-left: 5rem;
+    color: var(--blanco);
 }
 
