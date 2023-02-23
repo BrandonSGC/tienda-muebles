@@ -81,11 +81,23 @@ img {
     border-top: 1px solid var(--grisClaro);
 }
 
-.nav-principal {    
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
+.nav-principal {
+    margin: 2rem 0;
 }
+.nav-principal a {
+    display: block;
+    text-align: center;
+    padding: .5rem 0;    
+}
+
+@media (min-width: 768px) {
+    .nav-principal {    
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 .hero {
     height: 50.5rem;
