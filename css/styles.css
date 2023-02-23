@@ -98,13 +98,19 @@ img {
     }
 }
 
-
+/* Imagen */
 .hero {
-    height: 50.5rem;
+    height: 25rem;
     background-image: url(../img/principal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 50.5rem;
+        background-repeat: no-repeat;
+    }    
 }
 
 /* Categorias */
