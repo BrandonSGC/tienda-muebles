@@ -292,7 +292,7 @@ img {
     }
 }
 
-/* Blog */
+/* Blog / Entrada */
 
 .entrada-meta p {
     font-weight: 700;
@@ -314,6 +314,10 @@ img {
         border-bottom: 2px solid var(--grisClaro);
         margin-bottom: 2rem;
     }
+
+    .entrada:last-child {
+        border: none;
+    }
     
     .entrada-meta {
         display: flex;
@@ -324,4 +328,9 @@ img {
         display: inline;
         padding: 1rem 4rem;
     }
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
 }
