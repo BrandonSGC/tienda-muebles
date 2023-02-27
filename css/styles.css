@@ -22,13 +22,16 @@ body {
     line-height: 1.7;
 }
 
-/* Propiedades */
+/* Utilidades */
 .text-center {
     text-align: center;
 }
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+.max-width-30 {
+    max-width: 30rem;
 }
 
 /* Globales */
@@ -286,5 +289,39 @@ img {
         flex-direction: column;
         justify-content: center;
         
+    }
+}
+
+/* Blog */
+
+.entrada-meta p {
+    font-weight: 700;
+}
+
+.entrada-meta span {
+    color: var(--celeste);
+}
+
+@media (min-width: 768px) {
+    .contenedor-blog {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+
+    .entrada {
+        padding-bottom: 4rem;
+        border-bottom: 2px solid var(--grisClaro);
+        margin-bottom: 2rem;
+    }
+    
+    .entrada-meta {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+    .leer {
+        display: inline;
+        padding: 1rem 4rem;
     }
 }
