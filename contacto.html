@@ -27,35 +27,34 @@
         </nav>
     </div>
 
-
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Contacto</h2>
 
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Tus Datos</legend>
                 <div class="campo">
-                    <label for="nombre">Nombre: </label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" placeholder="Nombre" id="nombre" required>
                 </div>
                 
                 <div class="campo">
-                    <label for="asunto">Asunto: </label>
+                    <label for="asunto">Asunto:</label>
                     <input type="text" placeholder="Asunto" id="asunto">
                 </div> 
                 
                 <div class="campo">
-                    <label for="temail">Email: </label>
+                    <label for="temail">Email:</label>
                     <input type="email" placeholder="Email" id="email">
                 </div> 
 
                 <div class="campo">
-                    <label for="tel">Teléfono: </label>
+                    <label for="tel">Teléfono:</label>
                     <input type="tel" placeholder="Teléfono" id="tel">
                 </div>
 
                 <div class="campo">
-                    <label for="mensaje">Mensaje: </label>
+                    <label for="mensaje">Mensaje:</label>
                     <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
                 </div>
             </fieldset>
@@ -63,7 +62,7 @@
             <fieldset>
                 <legend>País</legend>
                 <div class="campo">
-                    <label for="pais">País: </label>
+                    <label for="pais">País:</label>
                     <select name="" id="pais">
                         <option value="">--Seleccione--</option>
                         <option value="CR">Costa Rica</option>
@@ -81,15 +80,15 @@
             <fieldset>
                 <legend>Información Extra</legend>
                 <div class="campo">
-                    <label for="cliente">Cliente: </label>
+                    <label for="cliente">Cliente:</label>
                     <input type="radio" id="cliente" name="tipo" value="Cliente">
                 </div>
                 <div class="campo">
-                    <label for="proovedor">Proovedor: </label>
+                    <label for="proovedor">Proovedor:</label>
                     <input type="radio" id="proovedor" name="tipo" value="Proovedor">
                 </div>
                 <div class="campo">
-                    <label for="categoria">Categoría de Interés</label>
+                    <label for="categoria">Categoría de Interés:</label>
                     <input list="categorias" name="categorias">
                     <datalist id="categorias">
                         <option value="Cocina">
@@ -100,11 +99,9 @@
                     </datalist>
                 </div>                
             </fieldset>
-            <input type="submit" value="Enviar Formulario" name="" id="">
+            <input class="btn" type="submit" value="Enviar Formulario" name="" id="">
         </form>
     </main>
-
-
 
     <footer class="site-footer">
         <div class="grid-footer contenedor">
