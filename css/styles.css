@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --celeste: #037bc0;
+    --celesteOscuro: #005485;
     --negro: #000000;
     --grisClaro: #e1e1e1;
     --blanco: #FFFFFF;
@@ -350,4 +351,51 @@ img {
     height: 30rem;
     width: 40rem;
     object-fit:cover;
+}
+
+/* Formulario */ 
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid var(--negro);
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: var(--celesteOscuro);
+    color: var(--blanco);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    /* flex-basis va a medir lo que le digamos*/
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+textarea {
+    /* flex tiene tiene factor de crecimiento, por
+    lo que va a hacer es tomar el resto del espacio
+    que haya disponible, porque va a ir asignando un
+    pixel de los que haya disponibles pero como no hay 
+    nada mas, no hay otro elemento al cual asignarle 
+    pixeles en base al factor de crecimiento porque el
+    label ya tiene un ancho fijo entonces toma todo el
+    espacio y crece de esa forma. */
+    flex: 1;
+    border: 1px solid var(--grisClaro);
+    padding: 1rem;
 }
